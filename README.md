@@ -23,9 +23,7 @@ Term: Fall 2016
 
 + Step 4: The final step is to calculate the probability of each words showing in the new songs by this function:
 
-$$
-P\left ( word\, in\, a\, song \right )=\sum_{k=1}^{K}P\left ( \omega \mid \tau _{k} \right )P\left ( \tau _{k}\mid features \right )
-$$
+$$P\left ( word\, in\, a\, song \right )=\sum_{k=1}^{K}P\left ( \omega \mid \tau _{k} \right )P\left ( \tau _{k}\mid features \right )$$
 
 	
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
