@@ -11,7 +11,9 @@ Term: Fall 2016
 + Contributor's name: Yueqi Zhang
 + Projec title: Features and Lyrics Analysis
 
-+ +Project summary: The main prupose of this project is to explore connection between lyrics and features. Based on this goal, I complete this project by two main part. The first one is to recommend lyrics to a new song, or rather, which words have a relatively higher showing up probability. The second part is to explore association pattern between features and songs by association rules. 
+**Project summary: **
+
+The main prupose of this project is to explore connection between lyrics and features. Based on this goal, I complete this project by two main part. The first one is to recommend lyrics to a new song, or rather, which words have a relatively higher showing up probability. The second part is to explore association pattern between features and songs by association rules. 
 
 **Part 1:**
 
@@ -24,8 +26,9 @@ Term: Fall 2016
 + Step 4: The final step is to calculate the probability of each words showing in the new songs by this function:
 
 $$P\left ( word\, in\, a\, song \right )=\sum_{k=1}^{K}P\left ( \omega \mid \tau _{k} \right )P\left ( \tau _{k}\mid features \right )$$
-
 $$\(\sqrt{3x-1}+(1+x)^2\)$$
+
+I tested the model by 340 songs selected randomly among the two thousand songs. During the testing procudure, I predict the rank of the top 20 works in lyrics and I got the average of the rank is 267.
 
 	
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
