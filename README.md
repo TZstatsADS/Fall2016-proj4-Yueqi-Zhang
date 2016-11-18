@@ -2,7 +2,7 @@
 
 ### [Project Description](doc/Project4_desc.md)
 
-![image](http://cdn.newsapi.com.au/image/v1/f7131c018870330120dbe4b73bb7695c?width=650)
+![image](http://danverspublicschools.org/holten-richmond/wp-content/uploads/sites/6/2014/01/music-dandelion.jpg)
 
 Term: Fall 2016
 
