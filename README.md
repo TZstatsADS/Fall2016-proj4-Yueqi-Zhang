@@ -28,6 +28,7 @@ The main prupose of this project is to explore connection between lyrics and fea
 + I tested the model by 340 songs selected randomly among the two thousand songs. During the testing procudure, I predict the rank of the top 20 works in lyrics and I got the average of the rank is 267.
 
 **Part 2:**
+
 The next attempt is to use association rules to find out association patterns between features and lyrics. 
 
 + In this part, I change another way to deal with features. There are six types of features that I am interested in: duration, pace, loudness, section, pitch, timbre. I use the last segment start time to evaluate the duration of a song. Different bars start time, beats start time, segment start time and tatums start tme to get intervals of these. The average of intervals indicate pace. Finded the maximum of feather “segments_loudness_max” to represent loudness of songs. Used section number, maximum, minimum, mean, varience of difference of section start time to represent section. Calculated maximum, minimum, mean, varience of segment pitch for each of the 12 scales to indicate pitch. Timbre is segment timbre. 
