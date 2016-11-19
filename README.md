@@ -35,6 +35,8 @@ The next attempt is to use association rules to find out association patterns be
 
 + Apply Kmeans to each of these six types of feathers to transform them into factors so that we can use them in Association rules. Here is a glance of the result
 
+![image]()
+
 
 	
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
