@@ -23,12 +23,17 @@ The main prupose of this project is to explore connection between lyrics and fea
 
 + Step 3: After these two steps, I use KNN and random forest to do supervised classification to feathers with the label we got from topic models. By this step, when we get a new song, we can predict it's class and get the showing up probability of each word. 
 
-+ Step 4: The final step is to calculate the probability of each words showing in the new songs by this function:
++ Step 4: The final step is to calculate the probability of each words. The probability equals to the probability of words given topics times the probability of topics given features. 
 
-$$P\left ( word\, in\, a\, song \right )=\sum_{k=1}^{K}P\left ( \omega \mid \tau _{k} \right )P\left ( \tau _{k}\mid features \right )$$
-$$\(\sqrt{3x-1}+(1+x)^2\)$$
++ I tested the model by 340 songs selected randomly among the two thousand songs. During the testing procudure, I predict the rank of the top 20 works in lyrics and I got the average of the rank is 267.
 
-I tested the model by 340 songs selected randomly among the two thousand songs. During the testing procudure, I predict the rank of the top 20 works in lyrics and I got the average of the rank is 267.
+**Part 2:**
+The next attempt is to use association rules to find out association patterns between features and lyrics. 
+
++ In this part, I change another way to deal with features. There are six types of features that I am interested in: duration, pace, loudness, section, pitch, timbre. I use the last segment start time to evaluate the duration of a song. Different bars start time, beats start time, segment start time and tatums start tme to get intervals of these. The average of intervals indicate pace. Finded the maximum of feather “segments_loudness_max” to represent loudness of songs. Used section number, maximum, minimum, mean, varience of difference of section start time to represent section. Calculated maximum, minimum, mean, varience of segment pitch for each of the 12 scales to indicate pitch. Timbre is segment timbre. 
+
++ Apply Kmeans to each of these six types of feathers to transform them into factors so that we can use them in Association rules. Here is a glance of the result
+
 
 	
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
